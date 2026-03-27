@@ -9,7 +9,51 @@ html {
     background-color: rgba(0, 0, 0, 0.904);
 }
 
-div{
-    background: red;
+h1 {
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.button-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container > button {
+    padding: 15px;
+    margin: 20px;
+    font-size: 22px;
+    border-radius: 5px;
+    
+}
+
+.button-container > button:hover {
+    background-color: rgba(255, 255, 255, 0.308);
+    color: white;
     border: 2px solid white;
+    
+}
+
+.div-row{
+    background: rgb(30, 36, 54);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex; 
+    flex-direction: row;
+    margin: 0;
+}
+
+.div-column {
+    /* background: rgba(255, 0, 0, 0.164);  */
+    border: 1px solid rgb(255, 255, 255); 
+    padding: 10px;
+    flex: 1;
+   
+   
+}
+
+ 
+.js-set-div {
+    background: rgba(255, 255, 255, 0.308);
 }
