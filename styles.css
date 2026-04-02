@@ -9,17 +9,26 @@ html {
     background-color: rgba(0, 0, 0, 0.904);
 }
 
+ 
 h1 {
     text-align: center;
     color: white;
     margin: 10px;
 }
 
+button {
+    background-color: rgb(192, 64, 64);
+    color: whitesmoke;
+    font-weight: 200;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid white;
+}
+
 .button-container {
     display: flex; 
     align-items: center;
     justify-content: center;
-    
+   
 }
 
 .button-container > button {
@@ -31,10 +40,17 @@ h1 {
 }
 
 .button-container > button:hover {
-    background-color: rgba(255, 255, 255, 0.308);
-    color: white;
+    background-color: rgba(233, 231, 231, 0.938);
+    color: red;
     border: 2px solid white;
     
+}
+
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container {
@@ -44,9 +60,8 @@ h1 {
     justify-content: center;
     padding: 0;
     margin: 0;
-  
-     
-     
+    width: 400px;
+      
 }
 
 .div-row{
@@ -58,20 +73,24 @@ h1 {
     justify-content: center;
     margin: 0;
     padding: 0;
-    width: 560px;
-    
+     
 }
 
 .div-column {
     border: 1px solid rgb(255, 255, 255); 
     padding: 0;
     margin: 0;
-    height: 25px;
-    width: 45px;
-   
+    
 }
 
- 
 .js-set-div {
     background: rgba(255, 255, 255, 0.308);
+}
+
+h1 {
+    border-bottom: 2px solid red;
+}
+
+.red {
+    color: red;
 }

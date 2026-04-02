@@ -3,12 +3,15 @@ const container = document.querySelector(".container");
 
 const DEFAULT_GRID_SIZE = 16;
 
+
 function getRandomNumber(number) {
     return Math.floor(Math.random() * number);
 }
 
 function createGrid(gridSize) {
     
+    let heightAndWidth = (400 / gridSize);
+    console.log(heightAndWidth);
     for(let i = 0; i < gridSize; i++) {
         const divElement = document.createElement("div");
         divElement.classList.add("div-row");
@@ -17,7 +20,10 @@ function createGrid(gridSize) {
         for(let x = 0; x < gridSize; x++){
             const divSubElement = document.createElement("div");
             divSubElement.classList.add("div-column");
+            divSubElement.style.width = `${heightAndWidth}px`;
+            divSubElement.style.height = `${heightAndWidth}px`;
             divElement.appendChild(divSubElement);
+             
 
         }
     }
